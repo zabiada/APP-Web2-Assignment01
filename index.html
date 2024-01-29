@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>places to visit</h2>
+    <div class="content">
+      <div class="images">
+        <img class="image1" src="https://img.traveltriangle.com/blog/wp-content/uploads/2023/06/PTV-India-Cover-Final.png" alt="Taj Mahel" />
+        <img class="image2" src="https://assets-news.housing.com/news/wp-content/uploads/2022/06/28095201/15-worlds-best-places-to-visit-03.jpg" alt="Eiffel tower" />
+        <img class="image3" src="https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/daaf1-shutterstock_1742425157.jpg?fit=1000%2C800&ssl=1" alt="Noida" />
+        <img class="image4" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/d5/50/7e/caption.jpg?w=300&h=300&s=1" alt="Sirohi" />
+      </div>
+      <div class="main">
+        <img class="main-img" src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/08/Best-Places-to-Visit-in-Madhya-Pradesh.jpg" alt="Madhya" />
+        <p class="caption">Macca</p>
+      </div>
+    </div>
+
+    <script>
+      //image 1
+      
+      console.log("testing");
+      console.log(document.querySelector(".image1"));
+      document.querySelector(".image1").onclick = function () {
+        document.querySelector(".main-img").src =
+          document.querySelector(".image1").src;
+        document.querySelector(".main-img").alt =
+          document.querySelector(".image1").alt;
+        document.querySelector(".caption").innerHTML =
+          document.querySelector(".image1").alt;
+      };
+
+      //image 2
+
+      console.log(document.querySelector(".image2"));
+      document.querySelector(".image2").onclick = function () {
+        document.querySelector(".main-img").src =
+          document.querySelector(".image2").src;
+        document.querySelector(".main-img").alt =
+          document.querySelector(".image2").alt;
+        document.querySelector(".main-img").innerHTML =
+          document.querySelector(".image2").alt;
+      };
+      //image3
+
+      console.log(document.querySelector(".image3"));
+      document.querySelector(".image3").onclick = function () {
+        document.querySelector(".main-img").src =
+          document.querySelector(".image3").src;
+        document.querySelector(".main-img").alt =
+          document.querySelector(".image3").alt;
+        document.querySelector(".main-img").innerHTML =
+          document.querySelector(".image3").alt;
+      };
+      //image4
+      console.log(document.querySelector(".image4"));
+      document.querySelector(".image4").onclick = function () {
+        document.querySelector(".main-img").src =
+          document.querySelector(".image4").src;
+        document.querySelector(".main-img").alt =
+          document.querySelector(".image4").alt;
+        document.querySelector(".main-img").innerHTML =
+          document.querySelector(".image4").alt;
+      };
+    </script>
+  </body>
+</html>
